@@ -43,7 +43,7 @@ target_size_km = 3  # Target traffic zone size (in km)
 
 # --- Mobility Demand Simulation ---
 ors_key = eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6ImUyOTkzZDdhMWY2NzQ5YmI5MjM4NzNlMTEwMjIwZmNiIiwiaCI6Im11cm11cjY0In0=  # ORS API key (None if not using routing)
-# road_to_euclidian_ratio = 1.63  # Fallback ratio between distance by road and euclidian distance (if ORS not used)
+road_to_euclidian_ratio = 1.63  # Fallback ratio between distance by road and euclidian distance (if ORS not used)
 
 # --- Charging Demand ---
 # The charging scenario, with:
