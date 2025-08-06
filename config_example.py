@@ -42,7 +42,7 @@ pois_csv = "input/Nairobi_pois.csv"  # Points of interest (CSV file)
 target_size_km = 3  # Target traffic zone size (in km)
 
 # --- Mobility Demand Simulation ---
-ors_key = eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6ImUyOTkzZDdhMWY2NzQ5YmI5MjM4NzNlMTEwMjIwZmNiIiwiaCI6Im11cm11cjY0In0=  # ORS API key (None if not using routing)
+ors_key = "eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6ImUyOTkzZDdhMWY2NzQ5YmI5MjM4NzNlMTEwMjIwZmNiIiwiaCI6Im11cm11cjY0In0="  # ORS API key (None if not using routing)
 road_to_euclidian_ratio = 1.63  # Fallback ratio between distance by road and euclidian distance (if ORS not used)
 
 # --- Charging Demand ---
@@ -58,12 +58,12 @@ scenario = {
     },
     "work": {
         "share": 0.3,
-        "power_options_kW": [[7.4, 0.5], [11, 0.5]],
-        "arrival_time_h": [9, 1]
+        "power_options_kW": [[7.4, 0.5], [11.0, 0.5]],
+        "arrival_time_h": [8, 1]
     },
     "poi": {
         "share": 0.2,
-        "power_options_kW": [[7.4, 0.15], [11, 0.15], [22, 0.55], [50, 0.15]]
+        "power_options_kW": [[7.4, 0.10], [11, 0.15], [22, 0.50], [50, 0.25]]
         # Arrival time automatically calculated for POIs
     }
 }
@@ -77,7 +77,7 @@ installation_type = "groundmounted_fixed"
 # --- EV-PV Complementarity ---
 pv_capacity_MW = 1 # Installed nominal PV capacity
 start_date = "01-01" # Start date of the simulation (Format: MM-DD)
-end_date = "01-07" # End date of the simulation (Format: MM-DD)
+end_date = "12-31" # End date of the simulation (Format: MM-DD)
 
 # ========================================== #
 # =========== ADVANCED PARAMETERS ========== #
